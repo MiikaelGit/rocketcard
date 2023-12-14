@@ -1,0 +1,141 @@
+:root {
+    --bg: #0E1218;
+    --bg-card: #000000;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+    --border-button: #1A1A1A;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.share-text,
+.name,
+.text-logo,
+.custom-card p {
+    color: var(--text);
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+}
+
+.header-img {
+    background-image: url('assets/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    border: 2px solid #FFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.frame img {
+    width: 360px;
+    border: 5px solid var(--img-profile);
+    padding: 5px;
+    border-radius: 50%;
+    left: 460px;
+    top: 234px;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+.bg-card {
+    background-color: var(--bg-card);
+    width: 600px;
+    height: 800px;
+    position: relative;
+    width: 438px;
+    height: 693px;
+    border-radius: 50px;
+}
+
+.card {
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg);
+    border-radius: 50px;
+    width: 407px;
+    height: 644px;
+    position: absolute;
+    left: 17px;
+    top: 20px;
+    position: relative;
+}
+
+.info {
+    color: var(--text);
+    position: absolute;
+    top: 345px;
+    left: 25px;
+    border-radius: 50px;
+    width: 185px;
+    height: 185px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 0%, rgb(65, 65, 68, 0.70) 35%, rgba(0, 0, 0, 0.70) 100%);
+}
+
+.info div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.custom-card {
+    width: 290px;
+    height: 210px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-card p {
+    font-size: 20px;
+}
+
+.button {
+    color: var(--buttons);
+    background-color: var(--bg-card);
+    border: 2px solid var(--border-button);
+    width: 229px;
+    height: 59.47px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+}
+
+.footer-img {
+    background-image: url('assets/logo.svg');
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
